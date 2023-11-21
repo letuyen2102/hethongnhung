@@ -1,0 +1,105 @@
+﻿<div class="d-flex align-content-center justify-content-between pt-3 pb-3">
+    <h4 class="mb-0 fs-20px">Danh sách thiết bị</h4>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Manager/Dashboard" class="text-decoration-none text-primary">Tổng quan</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Danh sách thiết bị</li>
+        </ol>
+    </nav>
+</div>
+
+
+<div class="create-room" style="border-top : 2px solid #1877B1 ;border-bottom : 2px solid #1877B1; border-radius: 5px ; background-color:#fff">
+    <div class="d-flex align-items-center justify-content-between p-2">
+        <p class="mb-0">Tạo thiét bị</p>
+        <p class="mb-0">
+            <a class="text-decoration-none" role="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="true" aria-controls="multiCollapseExample2">
+                <i class="bi bi-dash text-black"></i>
+                <i class="bi bi-x text-black"></i>
+            </a>
+        </p>
+    </div>
+    <div class="collapse multi-collapse show" id="multiCollapseExample2">
+        <form class="p-2">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="mb-3">
+                        <label for="employeer_name" class="form-label">Uid</label>
+                        <input class="form-control shadow-none" id="employeer_name">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mb-3">
+                        <label for="employeer_address" class="form-label">Tên</label>
+                        <input class="form-control shadow-none" id="employeer_address">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mb-3">
+                        <label for="employeer_address" class="form-label">CardId</label>
+                        <input class="form-control shadow-none" id="employeer_address">
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <button type="button" class="p-2 text-white fs-16px" style="background-color:#4891C3">
+                    <i class="bi bi-plus"></i>
+                    Tạo thiét bị
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="mt-3" style="border-top : 2px solid #1877B1 ;border-bottom : 2px solid #1877B1; border-radius: 5px ; background-color:#fff">
+    <p class="fs-18px mt-2">Danh sách thiết bị</p>
+    <table id="list_user_table" class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>
+                    <p class="mb-0" style="font-weight :500">Uid</p>
+                </th>
+                <th>
+                    <p class="mb-0" style="font-weight :500">Tên</p>
+                </th>
+                <th>
+                    <p class="mb-0" style="font-weight :500">CardId</p>
+                </th>
+                <th>
+                    <p class="mb-0" style="font-weight : 500">Hành động</p>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <p>
+                        MNV-21522778-213
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Tên
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        MNV-21522778-213
+                    </p>
+                </td>
+                <td>
+                    <div class="d-flex align-items-center justify-content-evenly">
+                        <a href="/quan-ly/danh-sach-nhan-vien/chi-tiet/${ data }" class="btn btn-warning"><i class="bi bi-pencil-square text-white"></i></a>
+                        <a href="" class="btn btn-primary"><i class="bi bi-trash-fill text-white"></i></a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+
+    <script src="~/js/list_user.js">
+
+    </script>
+}
